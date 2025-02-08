@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reiki Chatbot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #fff6e6; /* Soft warm background */
+      }
+
+      #logo {
+        width: 250px; /* Adjust size */
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      @media (max-width: 600px) {
+        #logo {
+          position: static;
+          display: block;
+          margin: 0 auto 10px; /* Center it above the chatbot */
+        }
+      }
+
+      #chat-container {
+        width: 400px;
+        height: 500px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Logo -->
+    <img
+      id="logo"
+      src="file:///C:/Users/LENOVO/Desktop/NEWCHATBOT/1x/logo.png"
+      alt="Reiki Logo"
+    />
+
+    <!-- Chatbot -->
+    <div id="chat-container">
+      <iframe
+        src="https://app.relevanceai.com/agents/d7b62b/3572318c460c-4b54-a209-d888c702b60f/fb9a82b9-f04f-4351-8468-739b09b2fdf0/embed-chat?hide_tool_steps=false&hide_file_uploads=false&hide_conversation_list=false&bubble_style=agent&primary_color=%23685FFF&bubble_icon=pd%2Fchat&input_placeholder_text=Type+your+message...&hide_logo=false"
+      ></iframe>
+    </div>
+  </body>
+</html>
